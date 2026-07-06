@@ -1,0 +1,32 @@
+<suite name="All Test Suite">
+
+    <listners>
+        <listner class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+    </listners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Vicky/Documents/NaveenAPI/ApiProjectNew">
+        <classes>
+            <class name="com.qa.gorest.test.CreateUserTest">
+                <methods>
+                    <include name="createUser"/>
+                </methods>
+            </class>
+            <class name="com.qa.gorest.test.GetUserTest">
+                <methods>
+                    <include name="getAllUsers"/>
+                    <include name="getAllUsersQueryParam"/>
+                    <include name="getUsersPathParam"/>
+                </methods>
+            </class>
+            <class name="com.qa.gorest.test.UpdateUserTest">
+                <methods>
+                    <include name="UpdateUser"/>
+                </methods>
+            </class>
+            <class name="com.qa.products.test.GetProductTest">
+                <methods>
+                    <include name="getAllProducts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
